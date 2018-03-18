@@ -6,12 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Simple Blog Theme
+title: 好心的怪蜀黍的个人博客
 email: https://strange-uncle.github.io/
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: 记录个人的学习思考以及总结。
+#> # this means to ignore newlines until "baseurl:"
 baseurl: #"/jekyll-theme-simple-blog" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
 url: "https://strange-uncle.github.io/" # change this to the base hostname & protocol for your site
 
