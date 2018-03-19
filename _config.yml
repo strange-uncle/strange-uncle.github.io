@@ -1,129 +1,95 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Site settings 配置站点
+title: '吴柯佳的博客'
+description: '个人博客，随意记录，包括但不限于学习笔记，技术总结，生活点滴。'
+keyword: '数据 技术 程序员 工程师 摄影'
+url: 'https://strange-uncle.github.io' # your host
 
-# Site settings
-title: 好心的怪蜀黍的个人博客
-email: https://strange-uncle.github.io/
-description: 记录个人的学习思考以及总结。
-#> # this means to ignore newlines until "baseurl:"
-baseurl: #"/jekyll-theme-simple-blog" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://strange-uncle.github.io/" # change this to the base hostname & protocol for your site
+# if you don't need baseurl, you should leave this value blank.
+baseurl: ''
+
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
+
+# Footer
+footer:
+  since: 2018
+
+# Author 配置博主信息
+author: '吴柯佳'
+nickname: '吴老师'
+bio: 'Data Engineer'
+avatar: '/assets/img/profile.png'
+
+# Search
+search: true
+
+# Night mode
+nightMode: true
+
+# Comments 评论功能
+#   default_hidden：是否默认隐藏评论。若是则需要点击一按钮后才显示。 by Ray-Eldath
+comments:
+  default_hidden: true
+  #disqus: false
+  #disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+
+  livere: true
+  livere_uid: MTAyMC8zNTAwOS8xMTU0Ng==
+
+# Reward 赞赏功能 by Ray-Eldath
+reward:
+  enable: true
+  reward_comment: '真诚赞赏 手有余香'
+  wechatpay: '/assets/img/wechatpay.jpg'
+  alipay: '/assets/img/alipay.jpg'
+
+# b2t 回到顶部 by Ray-Eldath
+b2t: true
+
+# MathJax 公式支持 by Ray-Eldath
+mathjax: true
+
+# Share
+social-share: true
+social-share-items: ['wechat', 'linkedin','weibo', 'douban', 'twitter']
+
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'circuitBoard'
+
+# SNS settings 配置社交网站url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  email: 'mailto:383976477@qq.com'
+  #weibo: '//weibo.com/lovecolcol'
+  #juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
+  #instagram: '//www.instagram.com/steveliaocn'
+  github: '//github.com/strange-uncle'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
 
 # Build settings
+paginate: 6
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
+# Markdown
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
 
-# Make sure to exclude 'vendor' from the build
-exclude: [vendor, "Gemfile", "Gemfile.lock"]
+# RSS
+RSS: false
 
-# permalink: /:categories/:year/:month/:day/:title.html
-# none is equivalent to /:title.html
-# https://jekyllrb.com/docs/permalinks
-permalink: /:title.html
+# Permalink
+# See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
+permalink: /:year/:month/:day/:title.html
 
-google_analytics:
-
-# jekyll-theme-simple-blog date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-jekyll-theme-simple-blog:
-  date_format: "%b %-d, %Y"
-
-theme: # leave it empty
-
-show_post_image_posts_list: false
-
-header:
-  image: /assets/patterns/symphony.png
-
-# social
-author:
-  name: "Simple Blog Theme"
-  short_bio:
-    en: Jekyll Blog Theme, Responsive, SEO and Facebook enabled
-    it: Jekyll Blog Theme, Responsive, con SEO e integrazione Facebook
-  picture: assets/img/profile-60.png
-
-image: /assets/img/profile-225.png
-
-#twitter:
-#  username:
-#instagram_username:
-
-#linkedin_username: lorepirri
-
-#  site:
-#facebook:
-#  publisher_id: 1474191545979552
-#  profile_id: 1474191545979552
-#  app_id: 126080721296732
-#  authors: [1474191545979552]
-  #pixelcode: 1670622619859349
-
-
-# gitlab on site
-gitlab:
-  owner_url: https://strange-uncle.github.io/
-
-# github on site
-github:
-  owner_url: https://strange-uncle.github.io/
-
-
-# translation
-
-t:
-  en:
-    latest-posts:  "Latest Posts"
-    read-more:  "read more"
-    on-word: "on"
-    contact: "Contact"
-    contact-page: "contact.md"
-    read-time: "min read"
-    comments: "comments"
-    go-to-home-page: "Go to the Home Page"
-    months:
-      january: "Jan"
-      february: "Feb"
-      march: "Mar"
-      april: "Apr"
-      may: "May"
-      june: "Jun"
-      july: "Jul"
-      august: "Aug"
-      september: "Sep"
-      october: "Oct"
-      november: "Nov"
-      december : "Dec"
-  it:
-    latest-posts:  "Ultimi Posts"
-    read-more:  "leggi"
-    on-word: "su"
-    contact: "Contatta"
-    contact-page: "contatta.md"
-    read-time: "min di lettura"
-    comments: "commenti"
-    go-to-home-page: "Vai alla Pagina Iniziale"
-    months:
-      january: "Gen"
-      february: "Feb"
-      march: "Mar"
-      april: "Apr"
-      may: "Mag"
-      june: "Giu"
-      july: "Lug"
-      august: "Ago"
-      september: "Set"
-      october: "Ott"
-      november: "Nov"
-      december : "Dic"
-
-defaults:
-  -
-    scope:
-      type: "posts"
-    values:
-      lang: "en"
-      category: articles
+# Plugins
+plugins: [jekyll-paginate]
