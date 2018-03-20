@@ -19,7 +19,7 @@ footer:
 # Author 配置博主信息
 author: '吴柯佳'
 nickname: '吴老师'
-bio: 'Data Engineer'
+bio: '普通码农'
 avatar: '/assets/img/profile.png'
 
 # Search
@@ -63,15 +63,17 @@ postPatterns: 'circuitBoard'
 
 # SNS settings 配置社交网站url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
+  linkedin: '//www.linkedin.com/in/wukejia-tech'
   email: 'mailto:383976477@qq.com'
+  github: '//github.com/strange-uncle'
   #weibo: '//weibo.com/lovecolcol'
   #juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
   #instagram: '//www.instagram.com/steveliaocn'
-  github: '//github.com/strange-uncle'
+
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
-recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+recommend-condition-size: 0 # a tag will be recommended if the size of it is more than this value
 
 # Build settings
 paginate: 6
