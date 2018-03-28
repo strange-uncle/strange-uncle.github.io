@@ -18,7 +18,7 @@ footer:
 
 # Author 配置博主信息
 author: '吴柯佳'
-nickname: '吴老师'
+nickname:
 bio: '普通码农'
 avatar: '/assets/img/profile.png'
 
@@ -26,7 +26,7 @@ avatar: '/assets/img/profile.png'
 search: true
 
 # Night mode
-nightMode: true
+nightMode: false
 
 # Comments 评论功能
 #   default_hidden：是否默认隐藏评论。若是则需要点击一按钮后才显示。 by Ray-Eldath
@@ -73,7 +73,7 @@ sns:
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
-recommend-condition-size: 0 # a tag will be recommended if the size of it is more than this value
+recommend-condition-size: 2 # a tag will be recommended if the size of it is more than this value
 
 # Build settings
 paginate: 6
